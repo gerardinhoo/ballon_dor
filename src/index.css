@@ -1,13 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@469&display=swap');
+
 body {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav-links {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #333;
+  margin: 0;
 }
+
+.nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  font-size: 23px;
+  position: relative;
+  right: 5rem;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 23px;
+}
+
+img {
+  width: 70px;
+  margin-right: 10rem;
+}
+
+
+/* MEDIA QUErries */
+/* Mobile first, baby! */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  img {
+    margin-right: 80rem;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

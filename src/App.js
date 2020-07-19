@@ -1,25 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import BallonDorList from './components/ballonDorList/BallonDorList';
+import About from "./components/About/About";
+import mainLogo from "./ballonDor.png"
 import './App.css';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <nav>
+          <ul className="nav-links">
+            <img src={mainLogo} alt="logo"/>
+            <li className="nav-link">
+              <Link to="/">HOME</Link>
+            </li>
+            <li className="nav-link">
+              <Link to="/about">ABOUT</Link>
+            </li>
+          </ul>
+      </nav>
+        <Route exact path="/" component={BallonDorList} />
+        <Route exact path="/about" component={About} />
+      </div>
+  </Router>
   );
 }
 

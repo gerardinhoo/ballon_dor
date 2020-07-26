@@ -18,7 +18,7 @@ const BallonDor = ({dor}) => {
             <div className="card-body pt-0">
             <h5 className="card-title">{player}</h5>
             <h5>Brief Player Info</h5>
-            <i className="fa fa-info-circle" style={{fontSize:"30px", color:"green"}} onClick={showInfoHandler} />
+            <i className="fa fa-info-circle" style={{fontSize:"17px", color:"green"}} onClick={showInfoHandler} />
              {
                showInfo && <p style={{fontSize: "1.25rem"}} className="card-text">{infos}</p>
              } 

@@ -8,7 +8,7 @@ const BallonDorList = () => {
   const [ballonDorData, setBallonDorData] = useState(data);
 
   return (
-     <div>
+     <div className="my-container">
        {
          ballonDorData.map(dor => {
            return <BallonDor key={dor.id} dor={dor} />
